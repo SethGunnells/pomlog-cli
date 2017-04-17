@@ -8,17 +8,25 @@
   },
   "preferGlobal": true,
   "bin": {
-      "pomlog": "index.js"
+    "pomlog": "index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://SethGunnells@github.com/SethGunnells/pomlog-cli.git"
   },
-  "keywords": ["pomodoro", "cli", "time", "tracking"],
+  "keywords": [
+    "pomodoro",
+    "cli",
+    "time",
+    "tracking"
+  ],
   "author": "Seth Gunnells",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SethGunnells/pomlog-cli/issues"
   },
-  "homepage": "https://github.com/SethGunnells/pomlog-cli#readme"
+  "homepage": "https://github.com/SethGunnells/pomlog-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
