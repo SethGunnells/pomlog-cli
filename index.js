@@ -17,7 +17,7 @@ tooFewArguments();
 
 function createNewTask(taskName) {
   console.log('Create New Task Called');
-  console.log(`New Task Name: ${JSON.stringify(taskName)}`);
+  console.log(`New Task Name: ${taskName}`);
 }
 
 function tooFewArguments() {
