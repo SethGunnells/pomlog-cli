@@ -1,5 +1,5 @@
 {
-  "name": "pomlog-cli",
+  "name": "trackadoro-cli",
   "version": "0.0.1",
   "description": "A command-line tool that allows time logging using the Pomodoro method",
   "main": "index.js",
@@ -8,11 +8,11 @@
   },
   "preferGlobal": true,
   "bin": {
-    "pomlog": "index.js"
+    "trackadoro": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://SethGunnells@github.com/SethGunnells/pomlog-cli.git"
+    "url": "git+https://SethGunnells@github.com/SethGunnells/trackadoro-cli.git"
   },
   "keywords": [
     "pomodoro",
@@ -23,9 +23,9 @@
   "author": "Seth Gunnells",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SethGunnells/pomlog-cli/issues"
+    "url": "https://github.com/SethGunnells/trackadoro-cli/issues"
   },
-  "homepage": "https://github.com/SethGunnells/pomlog-cli#readme",
+  "homepage": "https://github.com/SethGunnells/trackadoro-cli#readme",
   "dependencies": {
     "commander": "^2.9.0"
   }
