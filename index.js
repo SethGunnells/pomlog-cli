@@ -11,16 +11,9 @@ program
 
 program.parse(process.argv);
 
-tooFewArguments();
-
 ////////////////////////////////////////////////////////////////////////////////
 
 function createNewTask(taskName) {
   console.log('Create New Task Called');
   console.log(`New Task Name: ${taskName}`);
-}
-
-function tooFewArguments() {
-  console.log('You must specify an action from the following list: create');
-  process.exit(1);
 }
