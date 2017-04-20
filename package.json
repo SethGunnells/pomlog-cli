@@ -2,7 +2,7 @@
   "name": "trackadoro-cli",
   "version": "0.0.1",
   "description": "A command-line tool that allows time logging using the Pomodoro method",
-  "main": "index.js",
+  "main": "trackadoro.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
