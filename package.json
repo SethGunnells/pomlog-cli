@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/SethGunnells/trackadoro-cli#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "uuid": "^3.0.1"
   }
 }
