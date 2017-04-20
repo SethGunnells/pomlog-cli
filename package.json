@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/SethGunnells/trackadoro-cli#readme",
   "dependencies": {
-    "commander": "^2.9.0",
-    "firebase": "^3.7.8"
+    "commander": "^2.9.0"
   }
 }
