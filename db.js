@@ -10,6 +10,9 @@ exports.addTask = function(name) {
     .catch(err => console.error('Error adding a task:', err));
 };
 
+exports.loadData = loadDbFile;
+exports.writeData = writeDbFile;
+
 ////////////////////////////////////////////////////////////////////////////////
 
 function addTask(name, data) {
