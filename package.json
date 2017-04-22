@@ -4,7 +4,8 @@
   "description": "A command-line tool that allows time logging using the Pomodoro method",
   "main": "trackadoro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
   },
   "preferGlobal": true,
   "bin": {
@@ -29,5 +30,8 @@
   "dependencies": {
     "commander": "^2.9.0",
     "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0"
   }
 }
