@@ -8,7 +8,7 @@
   },
   "preferGlobal": true,
   "bin": {
-    "trackadoro": "index.js"
+    "trackadoro": "trackadoro.js"
   },
   "repository": {
     "type": "git",
