@@ -50,7 +50,7 @@ function writeDbFile(data) {
 
     fs.writeFile(dbFilePath, dataString, (err) => {
       if (err) return reject(err);
-      resolve();
+      resolve(data);
     });
 
   });

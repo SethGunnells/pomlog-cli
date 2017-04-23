@@ -1,5 +1,6 @@
 var uuid = require('uuid/v4');
 var db = require('../db.js');
+var clients = require('./client');
 
 exports.addProject = function addProject(name, clientId) {
   return db.loadData()
@@ -12,7 +13,11 @@ exports.addProject = function addProject(name, clientId) {
         taskIds: [],
       };
 
-      if (clientId) data.projects[id].clientId = clientId;
+      if (clientId) {
+        data.projects[id].clientId = clientId;
+        return db.writeData(data)
+          .then(() => clients.addProjectToClient(clientId, id));
+      }
 
       return db.writeData(data);
     })

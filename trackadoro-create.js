@@ -12,6 +12,7 @@ program
 
 program
   .command('project <name>')
+  .option('-c, --client <client-name>', 'add to a client by name')
   .alias('p')
   .action(createProject);
 
@@ -28,8 +29,13 @@ function createClient(name) {
   clients.addClient(name);
 }
 
-function createProject(name) {
-  projects.addProject(name);
+function createProject(name, options) {
+  if (options.client) {
+    clients.getClientByName(options.client)
+      .then(clientId => projects.addProject(name, clientId));
+  } else {
+    projects.addProject(name);
+  }
 }
 
 function createTask(name) {
