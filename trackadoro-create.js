@@ -3,6 +3,7 @@
 var db = require('./db.js');
 var clients = require('./db/client');
 var projects = require('./db/project');
+var tasks = require('./db/task');
 var program = require('commander');
 
 program
@@ -18,6 +19,7 @@ program
 
 program
   .command('task <name>')
+  .option('-p, --project <project-name>', 'add to a project by name')
   .alias('t')
   .action(createTask);
 
@@ -38,7 +40,11 @@ function createProject(name, options) {
   }
 }
 
-function createTask(name) {
-  console.log(`trackadoro-create task ${name}`);
-  db.addTask(name);
+function createTask(name, options) {
+  if (options.project) {
+    projects.getProjectByName(options.project)
+      .then(projectId => tasks.addTask(name, projectId));
+  } else {
+    tasks.addTask(name);
+  }
 }
