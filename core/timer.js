@@ -1,6 +1,6 @@
 exports.startTimer = (task) => {
   var seconds = 1500;
-  runTimer(seconds);
+  return runTimer(seconds);
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -23,6 +23,8 @@ async function runTimer(startingTime) {
     await tick();
     formatTime(seconds);
   }
+
+  return Promise.resolve();
 }
 
 function tick() {
