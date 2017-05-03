@@ -5,7 +5,7 @@ exports.startTimer = (task) => {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-function formatTime(seconds) {
+function printTime(seconds) {
   var minutes = Math.floor(seconds / 60);
   var seconds = seconds % 60;
 
@@ -21,7 +21,7 @@ async function runTimer(startingTime) {
 
   for (var seconds = startingTime - 1; seconds >= 0; seconds--) {
     await tick();
-    formatTime(seconds);
+    printTime(seconds);
   }
 
   return Promise.resolve();
