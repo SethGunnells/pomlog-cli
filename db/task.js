@@ -44,8 +44,9 @@ exports.logTimerCompletion = async (id) => {
     throw `Error while logging time: Task does not exist`;
 
   var task = data.tasks[id];
+  var now = new Date();
   task.logs.push({
-    date: Date.now(),
+    date: now.toISOString(),
   });
 
   return db.writeData(data);

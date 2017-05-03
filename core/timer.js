@@ -17,7 +17,7 @@ function pad(number) {
 }
 
 async function runTimer(startingTime) {
-  formatTime(startingTime);
+  printTime(startingTime);
 
   for (var seconds = startingTime - 1; seconds >= 0; seconds--) {
     await tick();
@@ -28,5 +28,5 @@ async function runTimer(startingTime) {
 }
 
 function tick() {
-  return new Promise(resolve => setTimeout(() => resolve(), 1000));
+  return new Promise(resolve => setTimeout(() => resolve(), 5));
 }
